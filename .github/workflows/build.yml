@@ -32,7 +32,7 @@ jobs:
         pyinstaller --onefile --windowed wafer_defect_detection_demo.py
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: wafer_defect_detection_demo
         path: dist/wafer_defect_detection_demo.exe

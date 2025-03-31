@@ -29,10 +29,10 @@ jobs:
 
     - name: Build executable
       run: |
-        pyinstaller --onefile --windowed wafer_defect_detection_demo.py
+        pyinstaller --onefile --windowed wafer_defect_detection.py
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: wafer_defect_detection_demo
-        path: dist/wafer_defect_detection_demo.exe
+        path: dist/wafer_defect_detection.exe
